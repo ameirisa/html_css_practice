@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+* a{
+  text-decoration: none;
+  color: black;
+}
+
+body{
+  padding: 30px;
+  background-color: #f6f7fb;
+  color: #333;
+  font-size: 12px;
+}
+
+.item{
+  width: 740px;
+}
+
+.item-pic{
+  display: block;
+  width: 100%;
+  background: url("../images/image_L_1.jpg");
+}

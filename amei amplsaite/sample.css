@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+.body{
+    font-family:  "Hiragino Kaku Gothic ProN","Meiryo","sans-serif";
+}
+
+.html{
+    list-style: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.li{
+    list-style: none;
+}
+
+
+
+.title{
+    text-align: left;
+    background: url(./amei-images/bg-slash.gif);
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.header{
+    background: url(./amei-images/bg-header.gif) repeat-x;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
+}
+
+
+.img{
+    width: 225px;
+    height: 56px;
+    margin: 0 auto;
+    background: url(./amei-images/logo.png) no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    
+}
+
+.img a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.navi{
+    display: block;
+    height: 30px;
+    text-align:  center;
+    margin: 0 auto;
+}
+
+.navi li{
+    display: inline-block;
+}
+
+.navi a{
+    color:black;
+    padding: 0% 20px;
+    margin: 20px;
+}
+
+.navi a:hover{
+    background-color: #d03c56;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.wrapper{
+    display: flex;
+    width: 970px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main{
+    width:660px;
+}
+
+.hot-topic{
+    width: 100%;
+    height: 300px;
+    background-color: #2d3d54;
+    color: #fff;
+    display: flex;
+}
+
+.hot-topic-img{
+    width: 330px;
+    height: 300px;
+    background: url("./amei-images/hot-topic.jpg");
+    
+}
+
+.topic{
+    text-align: left;
+    padding: 50px 0px;
+    width: 50%;
+}
+.topic-date{
+    background-color: #fff;
+    color: #2d3d54;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.hottopic-text{
+    margin-right: 30px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.hottopc-p{
+    margin-right: 30px;
+    line-height: 1.2;
+    margin-left: 10px;
+}
+
+.news-contents{
+    max-height: 220px;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 30px;
+}
+.news-content{
+    display: block;
+    color: black;
+    width: 100%;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 3;
+}
+
+.news-content:nth-child(even){
+    background: url(./amei-images/bg-slash.gif)repeat;
+}
+
+.news-content:hover{
+    opacity: 0.5;
+}
+
+.news-date{
+    font-size: 12px;
+    width: 10%;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.news-tag{
+    width: 10%;
+    background-color: #d03c56;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1px 10px;
+}
+
+.topic-tag{
+    width: 15%;
+    background-color: #e9b62a;
+    color: #fff;
+    border-radius: 5px;
+    padding:1px 10px;
+}
+
+.news-text{
+    width: 70%;
+}
+
+.articles-item{
+    display: block;
+    width: 300px;
+    float: left;
+    box-shadow:5px 5px 20px #bdcadbab;
+    margin: 20px 10px ;
+}
+
+.articles-item:hover{
+    opacity: 0.5;
+}
+
+
+.articles-pic{
+    width: 100%;
+    height: 210px;
+    background: url("./amei-images/article.jpg");
+}
+
+.articles-text{
+    font-size: 15px;
+    color: #2d3d54;
+    margin: 10px 10px;
+    text-align: left;
+}
+
+.articles-p{
+    font-size: 12px;
+    color: #2d3d54;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.articles-date{
+    display:block;
+    color: #2d3d54;
+    background-color: #b5d264;
+    padding: 0px 20px;
+    float: right;
+    font-weight: bold;
+    font-size: 12px;
+    margin:15px 0px;
+}
+
+
+.saidemenu{
+    width: 275px;
+}
+
+.ranking-items{
+    counter-reset: number 0;
+}
+.ranking-item{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 5px 10px;
+}
+
+.ranking-item:hover{
+    opacity: 0.5;
+}
+
+
+.ranking-pic{
+    background: url("./amei-images/ranking.jpg") no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.rank{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(248, 201, 169, 0.719);
+    transform: rotate(45deg);
+    margin: 0 10px;
+}
+
+
+
+
+.rank::before{
+    counter-increment: number 1;
+    content:counter(number)"";
+    line-height: 33px;
+    display: inline-block;
+    transform: rotate(-45deg);
+    color:#fff;
+}
+
+.ranking-item:nth-of-type(1) .rank{
+    background-color: #e9b62a;
+}
+
+.ranking-item:nth-of-type(2) .rank{
+    background-color:silver;
+}
+
+.ranking-item:nth-of-type(3) .rank{
+    background-color: brown;
+}
+
+
+.ranking-text{
+    width: 150px;
+    font-size: 12px;
+    color: #2d3d54;
+    text-align: left;
+}
+
+.document-title{
+    list-style: none;
+    font-weight: bold;
+    border-left: 5px solid #e9b62a;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.document{
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    
+}
+
+.document a{
+    color:#d03c56;
+    padding-left: 10px;
+    background: url("./amei-images/arrow.gif")no-repeat;
+    padding-bottom: 40px;
+}
+
+.document a:hover{
+    opacity: 0.5;
+}
+
+.search{
+    text-align: center;
+    width: 100%;
+    background-color:rgba(211, 211, 211, 0.966);
+}
+
+.search-box{
+    display: inline-block;
+    font-size: 0;
+    padding: 20px 10px 0 10px;
+    text-align: left;
+}
+
+.input{
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    font-size: 12px;
+}
+
+.search-button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: #d03c56;
+    color: #fff;
+}
+
+.search-text{
+    font-size: 12px;
+}
+
+
+.footer{
+    background-color: #2d3d54;
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px 0 30px 0;
+    
+}
+
+.footer-items{
+    width: 970px;
+    text-align: right;
+    margin: 0 auto;
+    font-size: 0;
+    
+}
+
+.footer-items a{
+    color: #fff;
+    
+    border-bottom: 1px dashed #fff;
+}
+
+.footer-items a:hover{
+    opacity: 0.5;
+}
+
+.footer-item{
+    display: inline-block;
+    font-size: 13px;
+    margin-left:10px;
+}
+
+.footer-items .footer-item + .footer-item{
+    border-left: 1px solid #fff;
+    padding-left:10px ;
+}
+
+.copy-right{
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 15px;
+}
